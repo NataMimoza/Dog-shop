@@ -551,7 +551,7 @@ ul {
 
 
 .message__content {
-  background: url('/images/blue.png') no-repeat;
+  background: url('../images/blue.svg') no-repeat;
   height: 350px;
   background-size: cover;
   width: 100%;
