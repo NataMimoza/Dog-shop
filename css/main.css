@@ -459,7 +459,7 @@ ul {
   content: " ";
   width: 41px;
   height: 37px;
-  background-image: url("/images/testim-top.svg");
+  background-image: url("../images/testim-top.svg");
   top: 12px;
   left: 30px;
 }
@@ -469,7 +469,7 @@ ul {
   content: " ";
   width: 41px;
   height: 37px;
-  background-image: url("/images/testim-bottom.svg");
+  background-image: url("../images/testim-bottom.svg");
   bottom: 15px;
   right: 30px;
 }
@@ -619,7 +619,7 @@ ul {
 }
 
 .footer {
-  background: url("/images/footer-bg.svg") no-repeat;
+  background: url("../images/footer-bg.svg") no-repeat;
   height: 363px;
   max-width: 100%;
   background-size: contain;
