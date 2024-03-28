@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
-  // mousewheel: true,
+  speed: 600,
   loop: true,
 
   // Navigation arrows
@@ -11,5 +11,13 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
+let a = document.querySelectorAll('a');
+
+for (let element of a) {
+  element.addEventListener('click', function (event) {
+    event.preventDefault();
+  })
+}
 
 

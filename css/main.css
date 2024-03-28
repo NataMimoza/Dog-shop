@@ -424,16 +424,16 @@ ul {
   width: 100%;
 }
 
+.feedback {
+  margin-bottom: -80px;
+}
+
 .swiper {
   width: 100%;
   height: 465px;
 }
 
-/* .feedback__content {
-  margin-bottom: 86px;
-} */
-
-.feedback__content-title {
+.feedback__title {
   color: var(--main-color);
   text-align: center;
   font-family: Poppins;
@@ -527,19 +527,19 @@ ul {
 }
 
 .feedback__layer1 {
-  top: 98px;
+  bottom: 158px;
   left: 260px;
   z-index: -1;
 }
 
 .feedback__layer2 {
-  top: 88px;
+  bottom: 175px;
   left: 250px;
   z-index: -2;
 }
 
 .feedback__layer3 {
-  top: 78px;
+  bottom: 195px;
   left: 240px;
   z-index: -3;
 }
@@ -554,7 +554,7 @@ ul {
   right: -850px;
   margin-left: 23px;
   margin-bottom: 20px;
-  top: 40px;
+  top: -50px;
   opacity: .5;
 }
 
@@ -564,7 +564,7 @@ ul {
   margin-left: 23px;
   transform: rotate(180deg);
   right: 243px;
-  top: 90px;
+  top: -2px;
   opacity: .5;
 }
 
@@ -573,14 +573,19 @@ ul {
   opacity: 1;
 }
 
+.message {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 70px;
+}
+
 .message__content {
-  background: url('../images/blue.svg') no-repeat;
-  height: 350px;
-  background-size: cover;
-  width: 100%;
+  position: absolute;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 70px;
+  gap: 96px;
+  top: 110px;
+  left: 200px;
 }
 
 .message__inner {
@@ -607,7 +612,7 @@ ul {
 }
 
 .message__form {
-  margin-top: 138px;
+  margin-top: 38px;
 }
 
 .message__form-box {
@@ -642,17 +647,15 @@ ul {
 }
 
 .footer {
-  background: url("../images/footer-bg.svg") no-repeat;
-  height: 363px;
-  max-width: 100%;
-  background-size: contain;
-  background-position: bottom;
+  position: relative;
 }
 
 .footer__inner {
+  position: absolute;
+  top: 65px;
   display: flex;
   justify-content: space-between;
-  padding-top: 60px;
+  gap: 192px;
   height: auto;
 }
 
