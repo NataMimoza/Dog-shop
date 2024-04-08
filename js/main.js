@@ -19,5 +19,3 @@ for (let element of a) {
     event.preventDefault();
   })
 }
-
-
