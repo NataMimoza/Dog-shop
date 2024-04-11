@@ -16,6 +16,9 @@ let a = document.querySelectorAll('a');
 
 for (let element of a) {
   element.addEventListener('click', function (event) {
-    event.preventDefault();
+    const dataFancybox = this.dataset.fancybox;
+    if( !Boolean(dataFancybox )) {
+      event.preventDefault();
+    }
   })
 }
