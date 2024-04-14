@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dog - Product</title>
+  <link rel="icon" href="./images/logo.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap"
@@ -24,22 +25,26 @@
           </a>
           <p class="logo-name">DOG</p>
         </div>
-        <nav class="nav">
-          <ul>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dog Care</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Popular</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="nav-btn">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dog Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+        </ul>
         <div class="menu">
           <a href="#">
             <img src="images/nav-search.svg" alt="search">
@@ -47,10 +52,9 @@
           <a href="#">
             <img src="images/nav-cart.svg" alt="cart">
           </a>
-          <a href="#">
+          <!-- <a href="#">
             <img src="images/nav-burger.svg" alt="burger-menu">
-          </a>
-          <!-- <img src="./images/header-items.svg" alt="" /> -->
+          </a> -->
         </div>
       </div>
     </div>
@@ -352,9 +356,7 @@
   </main>
   <footer class="footer">
     <div class="footer__fill">
-      <svg class="svg-foo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 364" fill="none">
-        <path d="M0 61.5H378L752 0L1120.5 61.5H1500V363.5H0V61.5Z" fill="#140A03" />
-      </svg>
+      <div class="footer__fill-polygon"></div>
     </div>
     <div class="container">
       <div class="footer__inner">
@@ -389,7 +391,6 @@
         </div>
       </div>
     </div>
-
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script>
@@ -402,4 +403,3 @@
 </body>
 
 </html>
-<!-- //max-width="1140" height="346"// width="1423" height="364"-->
