@@ -1033,8 +1033,12 @@ ul {
     height: 300px;
   }
 
+  .svg {
+    transform: scaleY(1.4);
+  }
+
   .message__content {
-    left: 200px;
+    left: 180px;
   }
 
   .svg-foo {
@@ -1161,8 +1165,18 @@ ul {
     max-width: 485px;
   }
 
+  .feedback__inner-author,
+  .feedback__inner-job {
+    margin-left: 0;
+  }
+
+  .svg {
+    transform: scaleY(1.6);
+    margin-top: 0;
+  }
+
   .message__content {
-    left: 188px;
+    left: 130px;
     top: 0px
   }
 
@@ -1198,6 +1212,7 @@ ul {
 
   .footer__inner-contact {
     gap: 10px;
+    margin-bottom: 7px;
   }
 }
 
@@ -1235,13 +1250,12 @@ ul {
 
   .svg {
     transform: scaleY(2);
-    margin-top: 50px;
   }
 
   .message__content {
-    left: 130px;
+    left: 60px;
     gap: 10px;
-    top: 25px;
+    top: -20px;
   }
 }
 
@@ -1274,12 +1288,16 @@ ul {
   }
 
   .message__content {
-    left: 5%;
+    left: 10%;
   }
 
   .message__inner {
     max-width: 370px;
     gap: 10px;
+  }
+
+  .message__content {
+    top: 12px;
   }
 
   .message__form {
@@ -1385,5 +1403,14 @@ ul {
 
   .message {
     margin-bottom: 55px;
+  }
+
+  .message__content {
+    left: 10px;
+    width: 95%;
+  }
+
+  .message__inner-title {
+    font-size: 22px;
   }
 }
