@@ -1375,6 +1375,8 @@ ul {
 
   .message__content {
     top: 10px;
+    left: 10px;
+    width: 95%;
   }
 }
 
@@ -1403,11 +1405,6 @@ ul {
 
   .message {
     margin-bottom: 55px;
-  }
-
-  .message__content {
-    left: 10px;
-    width: 95%;
   }
 
   .message__inner-title {
