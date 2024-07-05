@@ -14,6 +14,10 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-size: clamp(30px, 8vw, 100px);
+}
+
 a {
   text-decoration: none;
 }
@@ -87,7 +91,6 @@ ul {
   max-width: 613px;
   padding-top: 170px;
   font-family: Poppins, sans-serif;
-  font-size: 100px;
   font-weight: 700;
   line-height: 120px;
   position: relative;
@@ -652,15 +655,17 @@ ul {
 
 .message__form {
   margin-top: 38px;
+  display: flex;
 }
 
 .message__form-box {
   height: 70px;
+  width: 380px;
   border-radius: 10px 0 0 10px;
   border: none;
   background: #FFF;
   outline: none;
-  padding: 15px 200px 14px 21px;
+  padding: 15px;
   line-height: 40.6px;
 }
 
@@ -680,7 +685,6 @@ ul {
   padding: 15px 37px;
   color: #FFF;
   font-size: 18px;
-  left: -4px;
   position: relative;
 }
 
@@ -758,7 +762,7 @@ ul {
   display: none;
 }
 
-/* ================= media ========================= */
+/* =================================== media ========================= */
 
 @media (max-width: 1310px) {
   .headline__img {
@@ -784,7 +788,7 @@ ul {
   }
 }
 
-/* ====================== */
+/* ================================== */
 @media (max-width: 1150px) {
   .headline {
     margin-left: 50px;
@@ -793,7 +797,6 @@ ul {
 
   .headline__title {
     max-width: 502px;
-    font-size: 85px;
     padding-top: 90px;
     line-height: 100px;
   }
@@ -845,7 +848,7 @@ ul {
   }
 }
 
-/* ========================= */
+/* ===================================== */
 @media(max-width: 1070px) {
   .feedback__btn {
     right: 225px;
@@ -875,15 +878,11 @@ ul {
   }
 }
 
-/* ================ */
+/* =============================== */
 @media (max-width: 1000px) {
   .headline__img {
     max-width: 540px;
     right: 0;
-  }
-
-  .headline__title {
-    font-size: 75px;
   }
 
   .product__content {
@@ -918,7 +917,6 @@ ul {
     left: 270px;
     top: 25px;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: 20px;
   }
 
@@ -940,12 +938,11 @@ ul {
   }
 }
 
-/* ======================= */
+/* ====================================== */
 @media (max-width: 880px) {
   .headline__title {
     max-width: 375px;
     padding-top: 50px;
-    font-size: 65px;
   }
 
   .headline__img {
@@ -975,11 +972,11 @@ ul {
   }
 
   .message__content {
-    left: 235px;
+    left: 155px;
   }
 
   .message__form-box {
-    padding-right: 130px;
+    max-width: 330px;
   }
 
   .message__form-btn {
@@ -1002,14 +999,13 @@ ul {
   }
 }
 
-/* ====================== */
+/* ==================================== */
 @media (max-width: 800px) {
   .headline {
     margin-left: 35px;
   }
 
   .headline__title {
-    font-size: 55px;
     max-width: 350px;
     padding-top: 35px;
   }
@@ -1042,7 +1038,7 @@ ul {
   }
 
   .message__content {
-    left: 180px;
+    left: 100px;
   }
 
   .svg-foo {
@@ -1054,7 +1050,7 @@ ul {
   }
 }
 
-/* ================ */
+/* =============================== */
 @media (max-width: 700px) {
   .nav-btn {
     display: block;
@@ -1138,7 +1134,6 @@ ul {
   }
 
   .headline__title {
-    font-size: 50px;
     max-width: 290px;
     line-height: 65px;
   }
@@ -1179,11 +1174,6 @@ ul {
     margin-top: 0;
   }
 
-  .message__content {
-    left: 130px;
-    top: 0px
-  }
-
   .footer__inner {
     flex-direction: column;
     align-items: center;
@@ -1220,11 +1210,10 @@ ul {
   }
 }
 
-/* =================== */
+/* ==================================== */
 @media (max-width: 600px) {
   .headline__title {
     max-width: 225px;
-    font-size: 42px;
   }
 
   .headline__img {
@@ -1257,17 +1246,16 @@ ul {
   }
 
   .message__content {
-    left: 60px;
+    left: 35px;
     gap: 10px;
     top: -20px;
   }
 }
 
-/* ========================= */
+/* =========================================== */
 @media (max-width: 500px) {
   .headline__title {
     max-width: 210px;
-    font-size: 37px;
   }
 
   .headline__img {
@@ -1307,8 +1295,6 @@ ul {
   .message__form {
     display: flex;
     flex-direction: column;
-    max-width: 280px;
-    margin-left: 8%;
   }
 
   .message__form-box,
@@ -1334,10 +1320,9 @@ ul {
   }
 }
 
-/* ================ */
+/* ================================== */
 @media (max-width: 450px) {
   .headline__title {
-    font-size: 30px;
     line-height: 55px;
   }
 
@@ -1382,9 +1367,13 @@ ul {
     left: 10px;
     width: 95%;
   }
+
+  .message__form-box {
+    max-width: 315px;
+  }
 }
 
-/* ================== */
+/* ====================================== */
 @media (max-width: 370px) {
   .headline {
     margin-left: 20px;
@@ -1392,6 +1381,11 @@ ul {
 
   .product__inner-title {
     font-size: 20px;
+  }
+
+  .product__inner:hover {
+    transform: scale(1.02);
+    transition: all .7s;
   }
 
   .product__inner-desc,
